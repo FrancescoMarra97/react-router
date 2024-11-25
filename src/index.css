@@ -11,4 +11,12 @@ img {
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header a {
+    margin: 1rem;
+    color: black;
 }
