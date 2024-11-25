@@ -1,0 +1,14 @@
+.fetch-button {
+    margin-left: 1rem;
+}
+
+
+img {
+
+    height: auto;
+    width: 100%;
+}
+
+header {
+    display: flex;
+}
