@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import AppHeader from "./components/AppHeader.jsx"
+/* import AppHeader from "./components/AppHeader.jsx"
 import AppArticleForm from './components/ApparticleForm.jsx'
-import AppListPost from './components/AppListPost.jsx'
+import AppListPost from './components/AppListPost.jsx' */
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Posts from "./pages/posts.jsx"
