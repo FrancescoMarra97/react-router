@@ -40,6 +40,9 @@ export default function AppArticleForm({ addArticle }) {
 
     return (
         <>
+            <div>
+                <h1 className='m-4'>New Article</h1>
+            </div>
             <div className="container">
                 <form onSubmit={addArticle}>
                     <div className="input-group mb-3">

@@ -11,12 +11,14 @@ img {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 1rem;
 
 }
 
 header a {
     margin: 1rem;
     color: black;
+    font-size: 1.5rem;
 }
