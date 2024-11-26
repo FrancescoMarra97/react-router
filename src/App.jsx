@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Posts from "./pages/posts.jsx"
 import DefaultLayout from './pages/DefaultLayout.jsx'
+import PostPage from './pages/PostPage.jsx'
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<Home />} />
             <Route path='/posts' element={<Posts />}></Route>
+            <Route path='/posts/id' element={<PostPage />}></Route>
             <Route path='/About' element={<About />}></Route>
           </Route>
         </Routes>
