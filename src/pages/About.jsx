@@ -1,13 +1,11 @@
+import Jumbotron from "../components/Jumbotron"
+
 export default function About() {
-
-
+    const title = "About Us"
+    const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum laudantium doloremque aliquid similique commodi dolor veritatis animi! Nihil, mollitia."
     return (
         <>
-            <div className="container">
-                <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nulla ipsum laudantium doloremque aliquid similique commodi dolor veritatis animi! Nihil, mollitia.</p>
-            </div>
+            <Jumbotron title={title} description={description}></Jumbotron>
         </>
 
 

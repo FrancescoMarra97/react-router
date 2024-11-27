@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 export default function PostPage() {
     const navigate = useNavigate()
     const [post, setPost] = useState(null);
-    const { id } = useParams();
-    const url = `http://localhost:3001/posts/${id}`
+    const { slug } = useParams();
+    const url = `http://localhost:3001/posts/${slug}`
     console.log(url);
 
     useEffect(
@@ -25,11 +25,12 @@ export default function PostPage() {
                 .catch(() => {
                     navigate('/404');
                 });
-        }, [id, navigate]);
+        }, [slug]);
+
 
     return (
         <div>
-            <img src={`/images/${post.image}`} alt={post.title} />
+            <img src={`http://localhost:3001/imgs/posts/${post.image}`} />
             <h1>{post.title}</h1>
             <p>{post.content}</p>
             <ul>

@@ -24,7 +24,7 @@ function App() {
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<Home />} />
             <Route path='/posts' element={<Posts />}></Route>
-            <Route path='/posts/id' element={<PostPage />}></Route>
+            <Route path='/posts/:slug' element={<PostPage />}></Route>
             <Route path='/About' element={<About />}></Route>
           </Route>
         </Routes>
