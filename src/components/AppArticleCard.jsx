@@ -1,39 +1,6 @@
 import { useState } from "react"
 export default function AppArticleCard({ articles, handleTrashClick }) {
-    /*  const article = [
- 
-     ]
- 
-     const initialFormData = {
-         title: "",
-         image: "",
-         content: "",
-         category: "",
-         tags: [],
-         published: false,
-     }
-     const [formData, setFormData] = useState(initialFormData)
-     const [titles, setTitle] = useState(article)
- 
-     function addArticle(e) {
-         e.preventDefault()
- 
- 
-         setTitle([
-             ...titles,
-             { id: Date.now(), ...formData }
-         ])
- 
-         setFormData({
-             ...formData,
-             title: "",
-             image: "",
-             content: "",
-             category: "",
-             tags: [],
-             published
-         })
-     } */
+
     return (
         <>
             <div className='row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 m-2'>

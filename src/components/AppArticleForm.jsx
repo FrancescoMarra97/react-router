@@ -34,6 +34,12 @@ export default function AppArticleForm() {
         });
     }
 
+    function handleTrashClick(id) {
+        // Filtra gli articoli, escludendo quello con l'ID specificato
+        const updatedArticles = articles.filter(article => article.id !== id);
+        setArticles(updatedArticles);  // Aggiorna lo stato con la lista degli articoli modificata
+    }
+
     return (
         <>
             <div className="container" id="form">
@@ -122,7 +128,7 @@ export default function AppArticleForm() {
                     </div>
                 </form>
 
-                <AppArticleCard articles={articles} />
+                <AppArticleCard articles={articles} handleTrashClick={handleTrashClick} />
             </div>
         </>
     );
